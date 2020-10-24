@@ -23,7 +23,7 @@ Install using go get. See [deployment](#deployment) for notes on how to deploy t
 
 ### Prerequisites
 
-What things you need to install the software and how to install them.
+None.  This is pure GO.
 
 ```
 Give examples
