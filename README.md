@@ -17,27 +17,23 @@ See the unit tests for the details.
 
 The result is not always smaller than the input but it does make handling large arrays easier when debugging or logging results.
 
+Notice how the encoder uses a struct like a bucket of data into which we pour values that get combined using a finite state machine into the encoding.  This works very much like a file handle into which you dump a serial stream of bytes. At the end you need to flush when writing and likewise here you need to flush the encoder to complete its processing.
+
 ## Getting Started <a name = "getting_started"></a>
 
-Install using go get. See [deployment](#deployment) for notes on how to deploy the project on a live system.
+Install using go get, like this: "go get -u github.com/raychorn/go_rlencode"
+
+
+See [deployment](#deployment) for notes on how to deploy the project on a live system.
 
 ### Prerequisites
 
 None.  This is pure GO.
 
-```
-Give examples
-```
-
 ### Installing
 
-A step by step series of examples that tell you how to get a development env running.
+Step 1:  Install using go get, like this: "go get -u github.com/raychorn/go_rlencode"
 
-Say what the step will be
-
-```
-Give the example
-```
 
 And repeat
 
@@ -45,10 +41,10 @@ And repeat
 until finished
 ```
 
-End with an example of getting some data out of the system or using it for a little demo.
+Now you can use the code or report the issue to me and I will ignore your request.
 
 ## Usage <a name = "usage"></a>
 
-Add notes about how to use the system.
+See the unit tests to see how to use this code.
 
 (c). Copyright 2020, Ray C Horn, All Rights Reserved.
